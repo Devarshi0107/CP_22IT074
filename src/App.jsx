@@ -146,6 +146,17 @@ import './components/Navbar.css';
 import './components/aboutcard.css';
 import './components/SliderComponent.css';
 import './components/SliderComponent';
+import p1 from './assets/p1.jpg'
+import p2 from './assets/p2.jpg'
+import p3 from './assets/p3.jpg'
+import p4 from './assets/p4.jpg'
+import p5 from './assets/p5.jpg'
+import inst from './assets/inst.jpg.webp'
+import link from './assets/link.jpg.webp'
+import mail from './assets/mail.webp'
+import maps from './assets/maps.jpg.webp'
+import git from './assets/git.png'
+
 import Navbar from './components/Navbar';
 
  // Import the Navbar component
@@ -231,14 +242,14 @@ function App() {
 <div class="slider owl-carousel">
   <div class="card">
     <div class="img">
-      <img src="p1.jpg" alt=""/>
+      <img src={p1} alt=""/>
     </div>
    
   </div>
 
   <div class="card">
     <div class="img">
-      <img src="p2.jpg" alt=""/>
+      <img src={p2}  alt=""/>
     </div>
    
    
@@ -246,13 +257,13 @@ function App() {
 
   <div class="card">
     <div class="img">
-      <img src="p3.jpg" alt=""/>
+      <img src={p3}  alt=""/>
     </div>
    
   </div>
   <div class="card">
     <div class="img">
-      <img src="p4.jpg" alt=""/>
+      <img src={p4}  alt=""/>
     </div>
    
   </div>
@@ -304,7 +315,7 @@ about <br /> coding and algorithmic problem-solving. <br />
             <div className="card-cover">
   <div class="card">
     <div class="img">
-      <img src="p1.jpg" alt=""/>
+      <img src={p1}  alt=""/>
     </div>
     <h3>CP awareness</h3>  
 
@@ -316,7 +327,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis
 <div className="card-cover">
   <div class="card">
     <div class="img">
-      <img src="p2.jpg" alt=""/>
+      <img src={p2}  alt=""/>
     </div>
     <h3>code arcade</h3>  
     <p>
@@ -328,7 +339,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis
 <div className="card-cover">
   <div class="card">
     <div class="img">
-      <img src="p3.jpg" alt=""/>
+      <img src={p3} alt=""/>
     </div>
     <h3>Doubt Solving</h3>  
 
@@ -339,7 +350,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis
   <div className="card-cover">
   <div class="card">
     <div class="img">
-      <img src="p4.jpg" alt=""/>
+      <img src={p4}  alt=""/>
     </div>
     <h3>Exper talk</h3>  
 
@@ -361,20 +372,20 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis
 
 </center>
 <center>
-<div className='contact-div' onClick={handleGmailClick }><img src="mail.webp" alt=""  srcset="" width="20" height="20"/>cpsquad@charusat.edu.in</div>
+<div className='contact-div' onClick={handleGmailClick }><img src={mail} alt=""  srcset="" width="20" height="20"/>cpsquad@charusat.edu.in</div>
 <br />
-<div className='contact-div' onClick={handleGithubClick }><img src="git.png" alt=""  srcset="" width="20" height="20"/>Github.com/cpsquad</div>
+<div className='contact-div' onClick={handleGithubClick }><img src={git} alt=""  srcset="" width="20" height="20"/>Github.com/cpsquad</div>
 <br />
 
-<div className='contact-div' onClick={handleLinkedinClick }><img src="link.jpg.webp" alt=""  srcset="" width="20" height="20"/
+<div className='contact-div' onClick={handleLinkedinClick }><img src={link} alt=""  srcset="" width="20" height="20"/
 >linkedn/CPSQUAD</div>
 <br />
 
-<div className='contact-div' onClick={handleInstagramClick }><img src="inst.jpg.webp" alt=""  srcset="" width="20" height="20"/
+<div className='contact-div' onClick={handleInstagramClick }><img src={inst} alt=""  srcset="" width="20" height="20"/
 >Instagram</div>
 <br />
 
-<div className='contact-div' onClick={handleLocationClick }><img src="maps.jpg.webp" alt=""  srcset="" width="20" height="20"/>CSPIT CHARUSAT</div>
+<div className='contact-div' onClick={handleLocationClick }><img src={maps} alt=""  srcset="" width="20" height="20"/>CSPIT CHARUSAT</div>
 </center>
 
 </div>
@@ -385,8 +396,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit modi dolorem quis
       
 
         
-         
-         
     
   );
 }
